@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactenos</title>
+  
+    <link rel="stylesheet" href="css/estilos.css" type="text/css"/>
+    <script src="js/funcion.js"></script>
+</head>
+<body >
+
+<div class="caja" >
+    <p class="titulo">Contactenos</p>
+   
+<form onsubmit="event.preventDefault()">
+    <p class="titulos">Nombre : <input class="textos" id="nombre" type="text" name="nombre" placeholder="Escriba su nombre completo" required ></p>
+    <p class="titulos">Correo: <input class="textos" id="email" type="email" required placeholder="Escriba su correo electronico" ></p>
+
+    <p class="titulos">Asunto: <input class="textos" id="asunto" type="text" required placeholder="Escriba el asunto" ></p>
+
+    <p class="titulos">Mensaje: <input class="textos2" id="mensaje"  type="text" required placeholder="Escriba el mensaje" ></p>
+
+    
+    <input class="botones" type="reset" value="Borrar">
+    &nbsp;
+    <input class="botones" type="submit" value="Enviar" onclick="enviarDatos()" >
+    
+</form>
+
+</div>
+
+</body>
+</html>
